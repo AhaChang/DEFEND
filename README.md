@@ -8,10 +8,16 @@ This code requires the following:
 - pygod==1.0.0
 
 ## Usage
-Take Reddit dataset as an example:
+Take Reddit as an example:
 
 ```
 python train.py --data reddit --alpha 0.5 --gamma 1.5 --weight_corr 1e-10 --num_trial 10 --lr0 0.001
+```
+
+If you want to train on Twitter, please ensure the Twitter dataset has been downloaded. Then, execute the command:
+
+```
+python train.py --data twitter --alpha 0.1 --gamma 2.5 --weight_corr 5e-15 --num_trial 10 --lr0 0.005
 ```
 
 ## Dataset
